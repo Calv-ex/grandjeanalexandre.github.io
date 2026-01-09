@@ -1,0 +1,60 @@
+.header
+{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 7%;
+  background-color: var(--color-surface);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.header__mobilePP
+{
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.toggle-button
+{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.toggle-icon
+{
+  width: 24px;
+  aspect-ratio: 1/1;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.moon
+{
+  opacity: 0;
+}
+
+.sun
+{
+  opacity: 1;
+}
+
+html[data-theme="dark"] .sun {
+  opacity: 0;
+}
+
+html[data-theme="dark"] .moon {
+  opacity: 1;
+  color: var(--color-text-primary);
+}

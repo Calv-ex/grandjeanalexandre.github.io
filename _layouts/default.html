@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  {% include header.html %}
+
+    <main class="main">
+      {% include sidebar.html %}
+      <section class="content">
+        {{ content }}
+      </section>
+    </main>
+
+  {% include footer.html %}
+  <script src="/assets/js/toggleTheme.js"></script>
+  <script src="/assets/js/updateLinkColor.js"></script>
+  <script src="/assets/js/PostsCarousel.js"></script>
+</body>
+</html>

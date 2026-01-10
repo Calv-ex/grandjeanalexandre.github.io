@@ -1,5 +1,5 @@
 ---
 title: À propos
-permalink: ./about/
+permalink: /about/
 layout: default
 ---

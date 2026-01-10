@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>{{ page.title }} | {{ site.title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
 <body>
 
@@ -18,8 +18,8 @@
     </main>
 
   {% include footer.html %}
-  <script src="./assets/js/toggleTheme.js"></script>
-  <script src="./assets/js/updateLinkColor.js"></script>
-  <script src="./assets/js/PostsCarousel.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/toggleTheme.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/updateLinkColor.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/PostsCarousel.js"></script>
 </body>
 </html>

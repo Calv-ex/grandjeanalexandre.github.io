@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projets
-permalink: ../projects/
+permalink: /projects/
 ---
 
 <section class="projects-feed">

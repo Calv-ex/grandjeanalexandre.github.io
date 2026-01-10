@@ -6,7 +6,7 @@
   right: 0;
   width: 100%;
   z-index: 1000;
-  background-color: var(--color-bg);
+  background-color: var(--color-surface);
 }
 
 .sidebar-pdp, .sidebar__nav-list p
@@ -37,7 +37,6 @@
 }
 
 .sidebar__nav-list li.active {
-  background-color: var(--color-surface);
   color: var(--color-accent);
 }
 

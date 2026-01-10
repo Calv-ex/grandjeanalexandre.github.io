@@ -14,7 +14,7 @@
 
 .project-post
 {
-  background: var(--color-bg);
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -22,6 +22,7 @@
   cursor: pointer;
   height: fit-content;
   padding-bottom: 1rem;
+  position: relative;
 }
 
 .project-post:hover
@@ -35,8 +36,14 @@
 {
   display: flex;
   align-items: center;
+justify-content: space-between;  padding: 0.75rem 1rem;
+}
+
+.avatar-and-author
+{
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
-  padding: 0.75rem 1rem;
 }
 
 .post-avatar
@@ -91,7 +98,7 @@
 .post-carousel
 {
   height: 320px;
-  background-color: #000;
+  overflow-x: hidden;
 }
 
 .carousel-track
@@ -116,20 +123,22 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 16px;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 
 .dot
 {
-  width: 6px;
-  height: 6px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: var(--color-accent);
+  background: var(--color-text-secondary);
 }
 
 .dot.active
 {
-  background: rgb(255, 0, 0);
+  background: var(--color-accent);
 }
 

@@ -1,36 +1,39 @@
-<article class="project-post__container">
-  <div class="project-post">
+<article class="project-post" data-carousel="">
 
-  <!-- Header type Instagram -->
   <header class="post-header">
-    <img src="{{ include.project.avatar }}" class="post-avatar" alt="">
-    <span class="post-author">{{ include.project.author }}</span>
+    <div class="avatar-and-author">
+      <img src="{{ site.baseurl }}{{ include.project.avatar }}" class="post-avatar" alt="">
+      <span class="post-author">{{ include.project.author }}</span>
+    </div>
+    <div>
+      <p class="-post-date">{{ include.project.period }}</p>
+    </div>
   </header>
 
-  <!-- Carousel -->
-  <div class="post-carousel" data-carousel>
+  <div class="post-carousel">
     <div class="carousel-track">
       {% for img in include.project.screenshots %}
-        <img src="{{ img }}" class="carousel-slide" alt="">
+        <img src="{{ site.baseurl }}{{ img }}" class="carousel-slide" alt="">
       {% endfor %}
     </div>
   </div>
+  
+  <div class="carousel-dots">
+      {% for img in include.project.screenshots %}
+        <span class="dot"></span>
+      {% endfor %}
+    </div>
 
-  <!-- Texte -->
   <div class="post-content">
     <h2 class="post-title">{{ include.project.title }}</h2>
+
     {% for img in include.project.language %}
-      <img class="languageIcon" src="{{ img }}" alt="Language utilisé">
+      <img class="languageIcon" src="{{ site.baseurl }}{{ img }}" alt="Langage utilisé">
     {% endfor %}
+
     <p>{{ include.project.description }}</p>
+
     <a target="_blank" href="{{ include.project.link }}">Lien vers le site</a>
   </div>
 
-</div>
-<div class="carousel-dots">
-  {% for img in include.project.screenshots %}
-    <span class="dot"></span>
-  {% endfor %}
-</div>
 </article>
-

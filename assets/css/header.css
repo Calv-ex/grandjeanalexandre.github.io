@@ -11,6 +11,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid var(--color-border);
 }
 
 .header__mobilePP
@@ -19,6 +20,8 @@
   aspect-ratio: 1/1;
   border-radius: 50%;
   object-fit: cover;
+  border: 0.5px solid var(--color-border);
+  /* background-color: #FFFFFF; */
 }
 
 .toggle-button

@@ -1,8 +1,8 @@
 /* Container centré pour la lecture */
 .home-container {
   max-width: 600px;
-  margin: 10vh auto;
-  padding: 0 2rem;
+  margin: 120px auto;
+  padding: 0 5%;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -18,9 +18,9 @@
 }
 
 .hero-tagline {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  color: var(--color-accent); /* Ton Vert ou Rouge */
+  color: var(--color-accent);
 }
 
 /* Texte de bio */

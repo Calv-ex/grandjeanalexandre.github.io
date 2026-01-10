@@ -4,7 +4,7 @@ title: Accueil
 
 hero_title: "Alexandre Grandjean"
 hero_role: "Développeur Fullstack"
-hero_bio: "Je conçois des interfaces modernes inspirées des usages mobiles et des réseaux sociaux."
+hero_bio: "Passioné de jeux vidéos, je conçois des interfaces modernes inspirées de jeux et d'applications qui m'ont inspirés"
 style_desc: "Ce portfolio adopte une structure 'Social App' : une barre de navigation intuitive, des projets présentés comme des posts et une lecture fluide."
 nav_tip: "Utilisez la barre de navigation pour explorer mes travaux et en apprendre plus sur mon parcours."
 ---

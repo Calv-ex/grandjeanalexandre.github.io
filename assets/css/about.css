@@ -1,3 +1,58 @@
+.progress-bar-container {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background: var(--color-bg);
+  z-index: 900;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.main-sections-progress {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.main-bar {
+  height: 4px;
+  flex: 1;
+  background: var(--color-border);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.events-progress {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+}
+
+.event-step {
+  height: 2px;
+  flex: 1;
+  background: var(--color-border);
+  border-radius: 1px;
+  transition: background 0.3s ease;
+}
+
+.main-bar.active::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 100%;
+  background: var(--color-accent);
+}
+
+.event-step.active {
+  background: var(--color-accent);
+  box-shadow: 0 0 5px var(--color-accent);
+}
+
 .about-container {
   max-width: 600px;
   margin: 120px auto 100px;
@@ -11,10 +66,9 @@
   color: var(--color-text-primary);
 }
 
-/* TIMELINE STYLES */
 .timeline-container {
   position: relative;
-  padding-left: 30px; /* Espace pour la ligne à gauche */
+  padding-left: 30px;
   margin-bottom: 80px;
 }
 
@@ -29,12 +83,32 @@
 
 .event-item {
   position: relative;
-  margin-bottom: 50px; /* Grand espace entre les événements */
+  margin-bottom: 150px;
+  opacity: 0.3;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transform: translateY(20px);
+}
+
+.event-item.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.event-body {
+  padding: 20px;
+  background: var(--color-surface);
+  border-radius: 16px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.event-item.active .event-body {
+  border-color: var(--color-accent);
 }
 
 .event-dot {
   position: absolute;
-  left: -35px; /* Aligné sur la ligne (-30px + ajustement) */
+  left: -35px;
   top: 6px;
   width: 12px;
   height: 12px;
@@ -56,11 +130,11 @@
 }
 
 .event-desc {
-  color: var(--color-text-secondary);
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-top: 15px;
 }
 
-/* PROFIL STYLES */
 .profile-section {
   border-top: 1px solid var(--color-border);
   padding-top: 60px;

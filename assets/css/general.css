@@ -9,7 +9,7 @@
 
   --color-border: #DBE1E7;
   --color-accent: #238636;
-  --color-accent-rgb: 16, 185, 129; /* La même chose en RGB */
+  --color-accent-rgb: 16, 185, 129;
 }
 
 
@@ -22,7 +22,7 @@ html[data-theme="dark"] {
 
   --color-border: #30363d;
   --color-accent: #3fb950;
-  --color-accent-rgb: 16, 185, 129; /* La même chose en RGB */
+  --color-accent-rgb: 16, 185, 129;
 }
 
 

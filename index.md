@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Accueil
+permalink: /
 
 hero_title: "Alexandre Grandjean"
 hero_role: "Inspire à être développeur Fullstack"

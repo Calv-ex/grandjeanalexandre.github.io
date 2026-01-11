@@ -28,7 +28,7 @@
 
 .header::before {
   content: "";
-  position: absolute;
+  position: absolute; 
   bottom: -40px;
   left: -400px;
   width: 400px;

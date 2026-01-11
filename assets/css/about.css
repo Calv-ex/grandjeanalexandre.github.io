@@ -1,0 +1,97 @@
+.about-container {
+  max-width: 600px;
+  margin: 120px auto 100px;
+  padding: 0 20px;
+}
+
+.about-section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: var(--color-text-primary);
+}
+
+/* TIMELINE STYLES */
+.timeline-container {
+  position: relative;
+  padding-left: 30px; /* Espace pour la ligne à gauche */
+  margin-bottom: 80px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2px;
+  background: var(--color-border);
+}
+
+.event-item {
+  position: relative;
+  margin-bottom: 50px; /* Grand espace entre les événements */
+}
+
+.event-dot {
+  position: absolute;
+  left: -35px; /* Aligné sur la ligne (-30px + ajustement) */
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--color-accent);
+}
+
+.event-date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.event-desc {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* PROFIL STYLES */
+.profile-section {
+  border-top: 1px solid var(--color-border);
+  padding-top: 60px;
+}
+
+.profile-card {
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.detail-group {
+  margin-bottom: 25px;
+}
+
+.detail-group h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}

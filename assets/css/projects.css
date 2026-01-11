@@ -9,7 +9,7 @@
   flex-direction: column;
   gap: 4rem;
   width: clamp(300px, 75vw, 500px);
-  margin: 8rem auto;
+  margin: 40px auto;
 }
 
 .project-post
@@ -36,7 +36,7 @@
 {
   display: flex;
   align-items: center;
-justify-content: space-between;  padding: 0.75rem 1rem;
+  justify-content: space-between;  padding: 0.75rem 1rem;
 }
 
 .avatar-and-author
@@ -58,6 +58,11 @@ justify-content: space-between;  padding: 0.75rem 1rem;
 {
   font-weight: 600;
   font-size: 0.9rem;
+}
+
+.post-date
+{
+  text-align: right;
 }
 
 .post-image img
@@ -127,7 +132,6 @@ justify-content: space-between;  padding: 0.75rem 1rem;
   z-index: 10;
   pointer-events: auto;
 }
-
 
 .dot
 {

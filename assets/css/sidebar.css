@@ -9,11 +9,6 @@
   background-color: var(--color-surface);
 }
 
-.sidebar-pdp, .sidebar__nav-list p
-{
-  display: none;
-}
-
 .sidebar__nav-list
 {
   display: flex;

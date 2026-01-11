@@ -2,7 +2,7 @@
 
   <header class="post-header">
     <div class="avatar-and-author">
-      <img src="{{ site.baseurl }}{{ include.project.avatar }}" class="post-avatar" alt="">
+      <img src="{{ site.baseurl }}{{ include.project.avatar }}" class="post-avatar" alt="Photo de profil">
       <span class="post-author">{{ include.project.author }}</span>
     </div>
     <div>
@@ -13,7 +13,7 @@
   <div class="post-carousel">
     <div class="carousel-track">
       {% for img in include.project.screenshots %}
-        <img src="{{ site.baseurl }}{{ img }}" class="carousel-slide" alt="">
+        <img src="{{ site.baseurl }}{{ img }}" class="carousel-slide" alt="Screenshots du projet">
       {% endfor %}
     </div>
   </div>

@@ -40,14 +40,6 @@
   transition: background 0.3s ease;
 }
 
-.main-bar.active::after {
-  content: "";
-  position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 100%;
-  background: var(--color-accent);
-}
-
 .event-step.active {
   background: var(--color-accent);
   box-shadow: 0 0 5px var(--color-accent);
@@ -84,9 +76,6 @@
 .event-item {
   position: relative;
   margin-bottom: 150px;
-  opacity: 0.3;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  transform: translateY(20px);
 }
 
 .event-item.active {

@@ -17,14 +17,13 @@
       {% endfor %}
     </div>
   </div>
-  
-  <div class="carousel-dots">
+
+  <div class="post-content">
+     <div class="carousel-dots">
       {% for img in include.project.screenshots %}
         <span class="dot"></span>
       {% endfor %}
     </div>
-
-  <div class="post-content">
     <h2 class="post-title">{{ include.project.title }}</h2>
 
     {% for img in include.project.language %}

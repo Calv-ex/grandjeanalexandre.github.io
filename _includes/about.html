@@ -1,0 +1,68 @@
+<div class="progress-bar-container">
+  <div class="main-sections-progress">
+    <div class="main-bar" id="bar-path"></div>
+    <div class="main-bar" id="bar-profile"></div>
+  </div>
+  
+  <div class="events-progress">
+    {% for event in page.events %}
+      <div class="event-step"></div>
+    {% endfor %}
+  </div>
+</div>
+
+<section class="about-container">
+  
+  <section class="path-section">
+    <h2 class="about-section-title">{{ page.path_title }}</h2>
+    
+    <div class="timeline-container">
+      <div class="timeline-line"></div>
+      
+      <div class="timeline-events">
+        {% for event in page.events %}
+        <div class="event-item">
+          <div class="event-dot"></div>
+          <div class="event-body">
+            <span class="event-date">{{ event.date }}</span>
+            <h3 class="event-title">{{ event.title }}</h3>
+            <p class="event-desc">{{ event.description }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="profile-section">
+    <h2 class="about-section-title">{{ page.profile_title }}</h2>
+    
+    <div class="profile-grid">
+      <div class="profile-card">
+        <p>{{ page.profile_bio }}</p>
+      </div>
+
+      <div class="profile-details">
+        <div class="detail-group">
+          <h3>Compétences</h3>
+          <div class="tags">
+            {% for skill in page.skills %}
+            <span class="tag">{{ skill }}</span>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="detail-group">
+          <h3>Langues</h3>
+          <p>{{ page.languages }}</p>
+        </div>
+
+        <div class="detail-group">
+          <h3>Centres d'intérêt</h3>
+          <p>{{ page.interests }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</section>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "À Propos"
+permalink: /about/
 path_title: "Mon Parcours"
 profile_title: "Mon Profil"
 
